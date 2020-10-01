@@ -213,6 +213,131 @@ register_post_type(
   );
 /* notre code PHP pour rajouter les custom post type */
 }
-
+register_taxonomy(
+	'dimensions',
+	'voitures',
+	array(
+	  'label' => 'Dimensions',
+	  'labels' => array(
+	  'name' => 'Dimensions',
+	  'singular_name' => 'Dimension',
+	  'all_items' => 'Toutes les dimensions',
+	  'edit_item' => 'Éditer les dimensions',
+	  'view_item' => 'Voir les dimensions',
+	  'update_item' => 'Mettre à jour les dimensions',
+	  'add_new_item' => 'Ajouter une dimension',
+	  'new_item_name' => 'Nouvelle dimension',
+	  'search_items' => 'Rechercher parmi les dimensions',
+	  'popular_items' => 'Dimensions les plus utilisés'
+	),
+	'hierarchical' => true
+	)
+  );
+  register_taxonomy(
+	'couleur',
+	'voitures',
+	array(
+	  'label' => 'Couleurs',
+	  'labels' => array(
+	  'name' => 'Couleurs',
+	  'singular_name' => 'Couleur',
+	  'all_items' => 'Toutes les couleurs',
+	  'edit_item' => 'Éditer la couleur',
+	  'view_item' => 'Voir la couleur',
+	  'update_item' => 'Mettre à jour la couleur',
+	  'add_new_item' => 'Ajouter une couleur',
+	  'new_item_name' => 'Nouvelle couleur',
+	  'search_items' => 'Rechercher parmi les couleurs',
+	  'popular_items' => 'Couleurs les plus utilisées'
+	),
+	'hierarchical' => false
+	)
+  );
+  register_taxonomy(
+	'cylindre',
+	'voitures',
+	array(
+	  'label' => 'Cylindre',
+	  'labels' => array(
+	  'name' => 'Cylindres',
+	  'singular_name' => 'Cylindre',
+	  'all_items' => 'Toutes les cylindres',
+	  'edit_item' => 'Éditer les cylindres',
+	  'view_item' => 'Voir le cylindre',
+	  'update_item' => 'Mettre à jour le cylindre',
+	  'add_new_item' => 'Ajouter un cylindre',
+	  'new_item_name' => 'Nouveau cylindre',
+	  'search_items' => 'Rechercher parmi les cylindres',
+	  'popular_items' => 'Cylindres les plus utilisées'
+	),
+	'hierarchical' => false
+	)
+  );
+  register_taxonomy(
+	'annee',
+	'voitures',
+	array(
+	  'label' => 'Année',
+	  'labels' => array(
+	  'name' => 'Année',
+	  'singular_name' => 'Année',
+	  'all_items' => 'Toutes les année',
+	  'edit_item' => 'Éditer année',
+	  'view_item' => 'Voir anneée',
+	  'update_item' => 'Mettre à jour année',
+	  'add_new_item' => 'Ajouter une année',
+	  'new_item_name' => 'Nouvelle année',
+	  'search_items' => 'Rechercher parmi les année',
+	  'popular_items' => 'Années les plus utilisées'
+	),
+	'hierarchical' => false
+	)
+  );
+  register_taxonomy(
+	'modele',
+	'voitures',
+	array(
+	  'label' => 'Modèle',
+	  'labels' => array(
+	  'name' => 'Modèle',
+	  'singular_name' => 'Modèle',
+	  'all_items' => 'Tous les modèles',
+	  'edit_item' => 'Éditer le modèle',
+	  'view_item' => 'Voir le modèle',
+	  'update_item' => 'Mettre à jour le modèle',
+	  'add_new_item' => 'Ajouter un modèle',
+	  'new_item_name' => 'Nouveau modèle',
+	  'search_items' => 'Rechercher parmi les modèles',
+	  'popular_items' => 'Modèles les plus utilisées'
+	),
+	'hierarchical' => true
+	)
+  );
+  register_taxonomy(
+	'marque',
+	'voitures',
+	array(
+	  'label' => 'Marque',
+	  'labels' => array(
+	  'name' => 'Marque',
+	  'singular_name' => 'Marque',
+	  'all_items' => 'Toutes les marques',
+	  'edit_item' => 'Éditer la marque',
+	  'view_item' => 'Voir la marque',
+	  'update_item' => 'Mettre à jour la marque',
+	  'add_new_item' => 'Ajouter une marque',
+	  'new_item_name' => 'Nouvelle marque',
+	  'search_items' => 'Rechercher parmi les marques',
+	  'popular_items' => 'Marques les plus utilisées'
+	),
+	'hierarchical' => true
+	)
+  );
+  register_taxonomy_for_object_type( 'dimensions', 'voitures' );
+  register_taxonomy_for_object_type( 'couleur', 'voitures' );
+  register_taxonomy_for_object_type( 'cylindre', 'voitures' );
+  register_taxonomy_for_object_type( 'annee', 'voitures' );
+  register_taxonomy_for_object_type( 'modele', 'voitures' );
+  register_taxonomy_for_object_type( 'marque', 'voitures' );
 
 
