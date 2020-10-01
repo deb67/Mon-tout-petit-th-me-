@@ -9,6 +9,7 @@
 
 get_header();
 ?>
+<?php query_posts('posts_per_page=2'); ?>
 
 	<main id="primary" class="site-main">
 
