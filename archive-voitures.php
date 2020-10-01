@@ -9,17 +9,6 @@
 </a>
 </h1>
 <?php the_post_thumbnail( 'thumbnail' ); ?>
-
-<!-- Ajout taxonomy -->
-<div>
-<?php the_terms( $post->ID, 'dimensions', 'Dimensions : ' ); ?><br>
-<?php the_terms( $post->ID, 'couleur', 'Couleur : ' ); ?><br>
-<?php the_terms( $post->ID, 'cylindre', 'Cylindré : ' ); ?><br>
-<?php the_terms( $post->ID, 'annee', 'Année : ' ); ?><br>
-<?php the_terms( $post->ID, 'modele', 'Modèle : ' ); ?><br>
-<?php the_terms( $post->ID, 'marque', 'Marque : ' ); ?><br>
-</div> 
-
 </article>
 <?php endwhile; ?>
 <?php endif; ?>
