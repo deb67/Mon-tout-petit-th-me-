@@ -178,3 +178,41 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+
+add_theme_support( 'post-thumbnails' ); //post type custom
+
+add_action('init', 'my_custom_init'); //ajouter une fonction à l'initiation de la page
+function my_custom_init()
+{
+  
+register_post_type(
+  'voitures',
+  array(
+  'label' => 'Voitures',
+  'labels' => array(
+  'name' => 'Voitures',
+  'singular_name' => 'Voiture',
+  'all_items' => 'Toutes mes superbes voitures',
+  'add_new_item' => 'Ajouter une voiture',
+  'edit_item' => 'Éditer la voiture',
+  'new_item' => 'Nouvelle voiture',
+  'view_item' => 'Voir la voiture',
+  'search_items' => 'Rechercher parmi les voitures',
+  'not_found' => 'Pas de voiture trouvée',
+  'not_found_in_trash'=> 'Pas de voiture dans la corbeille'
+  ),
+  'public' => true, //public ou privé
+  'capability_type' => 'post', //post, page ou attachment
+  'supports' => array(
+  'title', //son titre
+  'editor', //auteur
+  'thumbnail' //vignette
+  ),
+  'has_archive' => true //est ce que le contenu est archivable ?
+  )
+  );
+/* notre code PHP pour rajouter les custom post type */
+}
+
+
+
