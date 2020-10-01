@@ -230,7 +230,7 @@ register_taxonomy(
 	  'search_items' => 'Rechercher parmi les dimensions',
 	  'popular_items' => 'Dimensions les plus utilisés'
 	),
-	'hierarchical' => true
+	'hierarchical' => false
 	)
   );
   register_taxonomy(
