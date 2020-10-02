@@ -9,6 +9,7 @@
 </a>
 </h1>
 <?php the_post_thumbnail( 'thumbnail' ); ?>
+<?php the_terms( $post->ID, 'marque', 'Marque : ' ); ?><br>
 </article>
 <?php endwhile; ?>
 <?php endif; ?>
