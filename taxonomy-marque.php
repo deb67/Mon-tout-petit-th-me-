@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <div class="projets">
     <p class="heading">
-        Type : <?php single_term_title(); ?>
+        Marque : <?php single_term_title(); ?>
     </p>
     <?php if (have_posts()) : ?>
     <?php while (have_posts()) : the_post(); ?>
