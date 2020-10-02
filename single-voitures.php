@@ -12,7 +12,7 @@
 <div>
 <?php the_terms( $post->ID, 'dimensions', 'Dimensions : ' ); ?><br>
 <?php the_terms( $post->ID, 'couleur', 'Couleur : ' ); ?><br>
-<?php the_terms( $post->ID, 'cylindre', 'Cylindré : ' ); ?><br>
+<p>Cylindré : <?php the_field('cylindre'); ?><p>
 <?php the_terms( $post->ID, 'annee', 'Année : ' ); ?><br>
 <?php the_terms( $post->ID, 'modele', 'Modèle : ' ); ?><br>
 <?php the_terms( $post->ID, 'marque', 'Marque : ' ); ?><br>

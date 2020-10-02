@@ -253,7 +253,7 @@ register_taxonomy(
 	'hierarchical' => false
 	)
   );
-  register_taxonomy(
+	/* register_taxonomy(
 	'cylindre',
 	'voitures',
 	array(
@@ -272,7 +272,7 @@ register_taxonomy(
 	),
 	'hierarchical' => false
 	)
-  );
+  ); */
   register_taxonomy(
 	'annee',
 	'voitures',
@@ -335,7 +335,7 @@ register_taxonomy(
   );
   register_taxonomy_for_object_type( 'dimensions', 'voitures' );
   register_taxonomy_for_object_type( 'couleur', 'voitures' );
-  register_taxonomy_for_object_type( 'cylindre', 'voitures' );
+ /* register_taxonomy_for_object_type( 'cylindre', 'voitures' ); */
   register_taxonomy_for_object_type( 'annee', 'voitures' );
   register_taxonomy_for_object_type( 'modele', 'voitures' );
   register_taxonomy_for_object_type( 'marque', 'voitures' );
