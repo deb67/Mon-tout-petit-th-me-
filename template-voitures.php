@@ -1,5 +1,5 @@
 <?php
-/** Template Name: coco */
+/* Template Name: coco */
 
  get_header(); ?>
 <?php
@@ -26,6 +26,10 @@ $query = new WP_Query( $args ); ?>
 <?php the_post_thumbnail( 'thumbnail' ); ?>
 </article>
 <?php endwhile; ?>
+<?php else : ?>
+<p class="nothing">
+Il n'y a pas de Post à afficher !
+</p>
 <?php endif; ?>
 </div>
 <?php get_footer(); ?>
